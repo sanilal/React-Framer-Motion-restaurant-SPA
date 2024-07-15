@@ -2,3 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .text-outline {
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-darkGreen;
+  }
+}
+
+@layer utilities {
+
+}
