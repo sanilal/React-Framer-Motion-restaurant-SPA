@@ -6,7 +6,7 @@ import Leaf from "../../assets/food/leaf.png";
 import { IoCartOutline } from 'react-icons/io5';
 import { motion } from 'framer-motion';
 
-const SlideUp = (delay) => {
+export const SlideUp = (delay) => {
     return {
         hidden: {
             y: "100%",
@@ -72,14 +72,13 @@ const Hero = () => {
                      transition={{ duration: 0.8 }}
                     src={Banana} alt="" className='w-[400px]  absolute  top-[-30px] right-[-130px] md:right-[-160px] img-shadow' />
                 </div>
-                {/* text content here */}
             </div>
         </div>
         {/* background Yellow */}
         <motion.div 
         initial={{ opacity:0, rotate: 60, x: 200, y: 100 }}
-        whileInView={{ opacity:1, rotate: 40, x: 0, y: 0 }}
-        className='w-[2500px] h-[2500px] rounded-3xl bg-yellow-300 absolute top-[-30%] left-[-70%] z-0'></motion.div>
+        whileInView={{ opacity:1, rotate: 200, x: 0, y: 100 }}
+        className='w-[1800px] h-[1000px] rounded-3xl bg-yellow-300 absolute top-[-10%] right-[-70%] -z-10'></motion.div>
     </main>
   )
 }
