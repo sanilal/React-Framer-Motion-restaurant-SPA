@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import HotDessert from './components/HotDessert/HotDessert';
+import Banner from './components/Banner/Banner';
 
 
 
@@ -13,6 +14,7 @@ const App = () => {
       <Hero />
      </div>
       <HotDessert />
+      <Banner />
     </div>
   )
 }
